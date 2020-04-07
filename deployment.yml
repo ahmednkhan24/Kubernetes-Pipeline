@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeapp
+spec:
+  replicas: 7
+  selector:
+    matchLabels:
+      name: nodeapp
+  template:
+    metadata:
+      labels:
+        name: nodeapp
+    spec:
+      containers:
+      - name: nodeapp
+        image: gcr.io/banded-anvil-273516/nodeapp:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        
