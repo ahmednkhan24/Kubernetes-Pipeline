@@ -77,7 +77,7 @@ e67fb6b72293: Pushed
 df1c2ca39dd3: Pushed
 latest: digest: sha256:606aa0f5a4dd3226aeb64e9294e3ab5b789925affb22461c865eaec9a3c097ef size: 1782
 DONE
-------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 ## gcloud container clusters create cluster1 --zone=us-central1-f
 NAME      LOCATION       MASTER_VERSION  MASTER_IP      MACHINE_TYPE   NODE_VERSION    NUM_NODES  STATUS
