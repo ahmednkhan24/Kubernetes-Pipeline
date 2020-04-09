@@ -22,3 +22,6 @@ jobs:
 
     - name: Build and Push Image
       run: gcloud builds submit --tag gcr.io/${{ secrets.GCLOUD_PROJECT }}/nodeapp:latest .
+      
+    - name: Build and Push Image
+      run: kubectl apply -f ./deployment.yml
