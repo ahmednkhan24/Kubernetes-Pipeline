@@ -16,6 +16,9 @@ jobs:
       with:
           service_account_email: ${{ secrets.GCLOUD_EMAIL }}
           service_account_key: ${{ secrets.GCLOUD_AUTH }}
+          
+    - name: Set Project
+      run: gcloud config set project banded-anvil-273516
 
     - name: Build and Push Image
       run: gcloud builds submit --tag gcr.io/banded-anvil-273516/nodeapp:latest .
