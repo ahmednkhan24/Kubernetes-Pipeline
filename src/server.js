@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/secret', (req, res) => {
-  res.send(`mysecret: ${process.env.MYSECRET}`);
+  res.send('second route!');
 });
 
 app.listen(process.env.PORT || 3000, () => {
